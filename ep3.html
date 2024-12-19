@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Event Management - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+* {
+    
+    padding: 50px,;
+    box-sizing: border-box;
+    
+   
+}
+
+/* Body Styling */
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBR4G03anIowi0rl1lGw-pghLnpz8G9OvdXQ&s');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    font-family: 'Garamond',serif;
+    margin: 10px;
+    background: linear-gradient(to right, black,#16F529 );
+    color: #fff;
+    justify-content: right;
+    
+    padding: 20px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    background-color: transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 40px;
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background: #16F529 ;
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+
+/* Container */
+.container {
+    background: linear-gradient(to right, black,#16F529 );
+    max-width: 80%;
+    margin: 90px auto;
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #4e4376;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.02);
+    background: #e8f0ff;
+}
+
+
+form {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #4e4376;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+form input:focus {
+    border-color: #4e4376;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #16F529;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #4e4376;
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+.bottom-section {
+    background:  linear-gradient(to right, black,#16F529 ););
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.bottom-section h2 {
+    font-size: 2rem;
+    color:black; 
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, black,#16F529 );
+}
+
+.social-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.social-buttons .btn i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+
+.social-buttons .btn:hover {
+    transform: scale(1.1);
+    background: #f7c08a; 
+    color: #4a3f65;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, black,#16F529 );;
+    color: #fff;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #f7c08a; /* Gold */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-item {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: #f7c08a; 
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4a3f65;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+    </style>
+</head>
+<body >
+    <header>
+        <h1 style="font-style:oblique;">ALL STAR ARENA</h1>
+    </header>
+    <nav>
+        
+        <a href="login.html">Login/Signup</a>
+        <a href="event.html">Event Updates</a>
+        <a href="scorecards.html">Scoreboard</a>
+        <a href="index.html">Contact us</a>
+    </nav>
+    <div class="container">
+        <h2>UPCOMING SPORTS EVENTS</h2>
+        <ul>
+            <li>Cricket Tournament - 25th Dec 2024</li>
+            <li>Football League - 10th Jan 2025</li>
+            <li>Basketball Championship - 5th Feb 2025</li>
+        </ul>
+    </div>
+   
+<section class="about-section">
+    <div class="about-container">
+        <h2>About All Star Arena</h2>
+        <p>
+            Welcome to <strong>All Star Arena</strong>, your ultimate destination for managing and experiencing sports events like never before! 
+            From live score updates to detailed event management, we've got it all covered.
+        </p>
+        <div class="features">
+            <div class="feature-item">
+                <i class="fas fa-futbol"></i>
+                <h3>Live Scoreboard</h3>
+                <p>Stay updated with real-time scores of ongoing games and tournaments.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Event Updates</h3>
+                <p>Get notified about upcoming sports events and schedules in your area.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <h3>Team Management</h3>
+                <p>Effortlessly manage team registrations and view team stats in one place.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Easy Communication</h3>
+                <p>Stay connected with your team and event organizers seamlessly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bottom-section">
+    <h2><center>CONNECT WITH US</center></h2>
+    <div class="social-buttons">
+        <a href="https://www.instagram.com" target="_blank" class="btn instagram-btn">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="btn twitter-btn">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="btn linkedin-btn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="contact.html" class="btn contact-btn">
+            <i class="fas fa-envelope"></i> Contact Us
+        </a>
+    </div>
+</section>
+
+
+</body>
+</html>

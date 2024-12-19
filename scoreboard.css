@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: url('https://media.istockphoto.com/id/1328693155/vector/bright-stadium-arena-lights-vector-design.jpg?s=612x612&w=0&k=20&c=oNtXorOpLDhFwTXYFgTH5j0ibI_AeNUqYkYhtF0TZnA=') no-repeat center center/cover;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Scoreboard Container */
+.scoreboard {
+    width: 80%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Header Section */
+.scoreboard-header {
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    text-align: center;
+    padding: 15px;
+}
+
+.scoreboard-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.team .team-info {
+    text-align: center;
+}
+
+.team img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+.team h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+/* Score Section */
+.score {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffdd57;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Divider */
+.divider {
+    width: 2px;
+    background: #ffdd57;
+    height: 80px;
+    margin: 0 auto;
+}
+
+/* Footer Section */
+.scoreboard-footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .score {
+        font-size: 3rem;
+    }
+
+    .scoreboard-header h1 {
+        font-size: 2rem;
+    }
+}
